@@ -258,6 +258,7 @@ header nav ul a {
 }
 
 #formulario-contacto label {
+  font-size: 1.2rem;
   margin-bottom: 5px;
   color: var(--secondary-color);
   font-weight: bold;
@@ -286,7 +287,7 @@ header nav ul a {
   resize: vertical;
 }
 #formulario-contacto .btn-principal{
-    font-size: 1em;
+    font-size: 1.4rem;
 }
 /* Footer */
 footer {
