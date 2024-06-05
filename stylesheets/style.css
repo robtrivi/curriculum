@@ -108,10 +108,12 @@ header nav li:hover {
   cursor: pointer;
 }
 header nav li:hover a {
-    
   color: white;
 }
 header nav ul a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
   letter-spacing: 1px;
   color: var(--secondary-color);
   text-decoration: none;
