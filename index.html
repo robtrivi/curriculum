@@ -1,82 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="stylesheets/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="curriculum, programador, html, css">
-    <meta name="description" content="Este sitio web contiene la información relevante de mi vida como programador">
-    <meta name="author" content="Robespierre Triviño">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="curriculum, programador, html, css" />
+    <meta
+      name="description"
+      content="Este sitio web contiene la información relevante de mi vida como programador"
+    />
+    <meta name="author" content="Robespierre Triviño" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Curriculum de Robespierre Triviño</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Curriculum de Robespierre Triviño</h1>
+      <!-- <div id="video-bg">
+        <video autoplay muted loop>
+          <source src="media/video/bg.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="overlay"></div> -->
+      <nav class="container">
+        <ul>
+          <li><a href="#informacion-personal">Información personal</a></li>
+          <li><a href="#habilidades">Habilidades técnicas</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#contacto">Educación</a></li>
+        </ul>
+      </nav>  
+      <div class="container" id="informacion-basica">
+        <img src="https://picsum.photos/300/300" alt="Mi foto de perfil en linkedin" />
+        <h1>Robespierre Triviño</h1>
+        <p>Desarrollador web Junior</p>
+        <a href="#informacion-personal"> Acerca de mi</a>
+      </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="">Información personal</a></li>
-            <li><a href="">Habilidades técnicas</a></li>
-            <li><a href="">Experiencia</a></li>
-            <li><a href="">Educación</a></li>
-        </ul>
-    </nav>
-    <section>
-        <h2>Información personal</h2>
-        <object data="https://placehold.co/150" width="150"></object>
-        <p>Hola mi nombre es <span>Lorem ipsum dolor</span>, sit amet consectetur adipisicing elit. Consequuntur magnam pariatur voluptatum sit aliquid eligendi voluptate numquam. Quae, assumenda repellendus.</p>
+    <section class="container" id="informacion-personal">
+      <h2>Información personal</h2>
+      <div class="wrapper-2-1">
+        <div id="sobre-mi">
+          <p>
+            Soy un programador apasionado por la tecnología y el desarrollo de
+            software, con una sólida formación en Ingeniería en Ciencias
+            Computacionales. Próximo a finalizar mis estudios, he adquirido un
+            amplio conocimiento teórico y práctico en diversas áreas de la
+            programación.
+          </p>
+          <p>
+            Además de mi formación académica, comparto mi conocimiento impartiendo
+            clases de programación a estudiantes, lo que me ha permitido consolidar
+            mis habilidades y mantenerme actualizado con las últimas tendencias y
+            tecnologías del sector. Disfruto de enseñar y ver cómo mis alumnos
+            progresan y desarrollan sus propias habilidades.
+          </p>
+          <p>
+            Me especializo en el desarrollo web y móvil, con experiencia en
+            lenguajes como Python, JavaScript y Java. Siempre estoy en busca de
+            nuevos retos y oportunidades para aprender y crecer profesionalmente. Mi
+            objetivo es contribuir a proyectos innovadores y formar parte de un
+            equipo dinámico donde pueda aplicar y expandir mis conocimientos.
+          </p>
+        </div>
+        <img src="https://picsum.photos/500/300" alt="Foto en un evento de líderes">
+      </div>
+      
     </section>
-    <section>
-        <h2>Habilidades técnicas</h2>
-        <ul>
-            <li>HTML</li>
-            <li>css</li>
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>SQL</li>
-        </ul>
+    <section class="container" id="habilidades">
+      <h2>Habilidades técnicas</h2>
+      <ul>
+        <li>HTML</li>
+        <li>css</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>SQL</li>
+      </ul>
     </section>
-    <section>
-        <h2>Experiencia</h2>
-        <ul>
-            <li>Tutor de programación
-                <ul>
-                    <li>
-                        <a href="https://www.youtube.com/@robtrivi" target="_blank">Canal de Youtube</a>
-                        <br>
-                        <iframe width="320" height="180" src="https://www.youtube.com/embed/HlkA0yc2uKo?si=SnD3mzcyONJ1pySA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </li>
-                </ul>
+    <section class="container" id = "experiencia">
+      <h2>Experiencia</h2>
+      <ul>
+        <li>
+          Tutor de programación
+          <ul>
+            <li>
+              <a href="https://www.youtube.com/@robtrivi" target="_blank"
+                >Canal de Youtube</a
+              >
+              <br />
+              <iframe
+                width="320"
+                height="180"
+                src="https://www.youtube.com/embed/HlkA0yc2uKo?si=SnD3mzcyONJ1pySA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
             </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section class="container" id="contacto">
+      <h2>Contactame</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+        veniam, cumque doloremque sequi sit eveniet.
+      </p>
+      <form action="">
+        <ul>
+          <li>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" />
+          </li>
+          <li>
+            <label for="mail">Correo electrónico:</label>
+            <input type="text" id="mail" type="email" />
+          </li>
+          <li><label for="asunto">Asunto:</label><input type="text" /></li>
+          <li>
+            <label for="mensaje">Mensaje:</label
+            ><textarea id="mensaje"></textarea>
+          </li>
+          <button>Enviar</button>
         </ul>
+      </form>
+      <p>
+        En caso de querer contactarme de forma presencial podemos vernos en una
+        oficina de coworking de la ciudad de Guayaquil, contactame previamente
+        con el asunto "Reunión presencial" estoy disponible de lunes a viernes
+        de 15h00 a 17h00
+      </p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0369883704143!2d-79.86786662591362!3d-2.1395020978414414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6de218ee2741%3A0xe0223b467c72988f!2sEdificio%20DEL%20PORTAL!5e0!3m2!1ses!2sec!4v1716218337664!5m2!1ses!2sec"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </section>
-    <section>
-        <h2>Educación</h2>
-    </section>
-    <section>
-        <h2>Contactame</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus veniam, cumque doloremque sequi sit eveniet.</p>
-        <form action="">
-            <ul>
-                <li>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name">    
-                </li>
-                <li>
-                    <label for="mail">Correo electrónico:</label>
-                    <input type="text" id="mail" type="email">
-                </li>
-                <li><label for="asunto">Asunto:</label><input type="text"></li>
-                <li><label for="mensaje">Mensaje:</label><textarea id="mensaje"></textarea></li>
-                <button>Enviar</button>
-            </ul>
-        </form>
-        <p>En caso de querer contactarme de forma presencial podemos vernos en una oficina de coworking de la ciudad de Guayaquil, contactame previamente con el asunto "Reunión presencial" estoy disponible de lunes a viernes de 15h00 a 17h00</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0369883704143!2d-79.86786662591362!3d-2.1395020978414414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d6de218ee2741%3A0xe0223b467c72988f!2sEdificio%20DEL%20PORTAL!5e0!3m2!1ses!2sec!4v1716218337664!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-    <footer>
-        Web realizada por Robespierre Triviño
-    </footer>
-</body>
+    <footer>Web realizada por Robespierre Triviño</footer>
+  </body>
 </html>
