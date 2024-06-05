@@ -126,7 +126,7 @@ header nav ul a {
   margin-top: -75px;
 }
 #informacion-texto a{
-  max-width: 35%;
+  max-width: 40%;
 }
 #informacion-basica {
   position: absolute;
@@ -154,6 +154,9 @@ header nav ul a {
 }
 
 /* Acerca de mi */
+#informacion-personal{
+  margin-top: 15px;
+}
 #sobre-mi p {
   white-space: normal;
   box-sizing: border-box;
