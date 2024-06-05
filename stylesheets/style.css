@@ -270,6 +270,7 @@ header nav ul a {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
+  font-size: 1.1rem;
 }
 
 #formulario-contacto input::placeholder,
