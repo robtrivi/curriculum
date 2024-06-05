@@ -29,10 +29,10 @@
       </div>
       <div class="overlay"></div> --> 
       <div class="container" id="informacion-basica">
-        <img src="https://picsum.photos/300/300" alt="Mi foto de perfil en linkedin" />
+        <img src="media/img/profile.png" alt="Mi foto de perfil en linkedin" />
         <h1>Robespierre Triviño</h1>
         <p>Desarrollador web Junior</p>
-        <a href="#informacion-personal"> Acerca de mi</a>
+        <a href="#informacion-personal" class="btn-principal"> Acerca de mi</a>
       </div>
       
       <nav class="container">
@@ -70,7 +70,7 @@
             equipo dinámico donde pueda aplicar y expandir mis conocimientos.
           </p>
         </div>
-        <img src="https://picsum.photos/500/300" alt="Foto en un evento de líderes">
+        <img src="media/img/liderando.jpg" alt="Foto en un evento de líderes">
       </div>
       
     </section>
@@ -89,7 +89,7 @@
       <h2>Experiencia</h2>
       <ul>
         <li>
-          <div class="wrapper-2-1 tarjeta-experiencia">
+          <div class="wrapper-1-1 tarjeta-experiencia">
             <div class="texto-tarjeta">
               <h3>Tutor de programacion</h3>
               <p>Me he desenvuelto por varios años como tutor de programación particular lo que me ha permitido estar actualizado, cuento con un canal de yotube</p>
@@ -107,8 +107,8 @@
           </div>
         </li>
         <li>
-          <div class="wrapper-2-1">
-            <div class="texto-tarjeta tarjeta-experiencia">
+          <div class="wrapper-1-1 tarjeta-experiencia" >
+            <div class="texto-tarjeta">
               <h3>Desarrolador Freelancer</h3>
               <p>He podido desarollar websites para proyectos de indole académico universitario</p> 
             </div>
@@ -128,25 +128,25 @@
           <ul>
             <li>
               <label for="name">Nombre:</label>
-              <input type="text" id="name" />
+              <input type="text" id="name" placeholder="Ejem: Robespierre Triviño"/>
             </li>
             <li>
               <label for="mail">Correo electrónico:</label>
-              <input type="text" id="mail" type="email" />
+              <input type="text" id="mail" type="email" placeholder="Ejem: rob@mail.com"/>
             </li>
-            <li><label for="asunto">Asunto:</label><input type="text" /></li>
+            <li><label for="asunto">Asunto:</label><input type="text" placeholder="Ejem: Cotización de web"/></li>
             <li>
               <label for="mensaje">Mensaje:</label
-              ><textarea id="mensaje"></textarea>
+              ><textarea id="mensaje" placeholder="Me guataría reunirme contigo...."></textarea>
             </li>
-            <button>Enviar</button>
+            <button class="btn-principal">Enviar</button>
           </ul>
         </form>
         <div id="mapa">
           <p>
             En caso de querer contactarme de forma presencial podemos vernos en una
             oficina de coworking de la ciudad de Guayaquil, contactame previamente
-            con el asunto "Reunión presencial" estoy disponible de lunes a viernes
+            con el asunto <strong>"Reunión presencial"</strong> estoy disponible de lunes a viernes
             de 15h00 a 17h00
           </p>
           <iframe

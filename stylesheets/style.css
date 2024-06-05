@@ -14,8 +14,9 @@ h3 {
   letter-spacing: 1px;
   color: var(--secondary-color);
 }
-h1,h2{
-    font-family: "Playfair Display", serif;
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
 }
 h2 {
   font-size: 2.4rem;
@@ -29,6 +30,21 @@ ul {
   --primary-color: #000;
   --secondary-color: #6457a6;
 }
+.btn-principal {
+    font-size: 0.5em;
+    border: 2px solid var(--secondary-color);
+    padding: 10px 25px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 5px 5px 0px 0px var(--secondary-color);
+    background-color: #ffffff;
+  }
+  .btn-principal:hover {
+    box-shadow: 0 0 var(--secondary-color);
+    color: #fff;
+    background-color: var(--secondary-color);
+  }
 
 /* Estructura */
 .container {
@@ -42,6 +58,11 @@ ul {
   grid-template-columns: 2fr 1fr;
   gap: 75px;
 }
+.wrapper-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 75px;
+  }
 /* Header */
 header {
   height: 100vh;
@@ -72,12 +93,15 @@ header nav li {
   flex: 1;
   text-align: center;
   background-color: white;
+  transition: 1s;
+
 }
 header nav li:hover {
   background-color: var(--secondary-color);
   cursor: pointer;
 }
 header nav li:hover a {
+    
   color: white;
 }
 header nav ul a {
@@ -103,23 +127,12 @@ header nav ul a {
   font-size: 3rem;
   gap: 20px;
 }
+#informacion-basica img{
+    max-height: 350px;
+    max-width: 350px;
+  }
 #informacion-basica p {
   font-size: 0.8em;
-}
-#informacion-basica a {
-  font-size: 0.5em;
-  border: 2px solid var(--secondary-color);
-  padding: 10px 25px;
-  color: var(--secondary-color);
-  text-decoration: none;
-  transition: 0.3s;
-  box-shadow: 5px 5px 0px 0px var(--secondary-color);
-  background-color: #ffffff;
-}
-#informacion-basica a:hover {
-  box-shadow: 0 0 var(--secondary-color);
-  color: #fff;
-  background-color: var(--secondary-color);
 }
 
 /* Acerca de mi */
@@ -132,6 +145,7 @@ header nav ul a {
 #informacion-personal img {
   max-width: 100%;
   height: auto;
+  box-shadow: 10px 10px 0px 0px var(--secondary-color);
 }
 #informacion-basica img {
   border-radius: 50%;
@@ -193,81 +207,92 @@ header nav ul a {
   padding: 20px;
 }
 
-#experiencia h3,
-#experiencia p {
+.tarjeta-experiencia h3,
+.tarjeta-experiencia p {
   margin: 0;
 }
 
-#experiencia iframe,
-#experiencia img {
+.tarjeta-experiencia iframe,
+.tarjeta-experiencia img {
   width: 100%;
   max-height: 200px;
   border: none;
+  object-fit: cover;
 }
 
 /* Formulario */
-#contacto{
-    text-align: center;
+#contacto {
+  text-align: center;
 }
-#contacto h2{
-    padding-bottom: 10px;
+#contacto p {
+  text-align: center;
 }
-#contacto .wrapper-2-1{
-    padding-top: 10px;
-    text-align: left;
+#contacto > p {
+  font-style: italic;
+}
+#contacto h2 {
+  padding-bottom: 10px;
+}
+#contacto .wrapper-2-1 {
+  padding-top: 10px;
+  text-align: left;
 }
 #formulario-contacto {
-    padding-top: 20px;
-    text-align: left;
-  }
-  
-  #formulario-contacto li {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-  }
-  
-  #formulario-contacto label {
-    margin-bottom: 5px;
-  }
-  
-  #formulario-contacto input[type="text"],
-  #formulario-contacto input[type="email"],
-  #formulario-contacto textarea {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
-  #formulario-contacto textarea{
-    max-width: 100%;
-    resize: vertical;
-  }
-  #mapa {
-    width: 400px; /* Ancho del mapa */
-  }
-  
-  /* Estilos adicionales para hacer el mapa más pequeño en dispositivos móviles */
-  @media (max-width: 600px) {
-    #mapa {
-      width: 100%;
-    }
-  }
-  
+  padding-top: 20px;
+  text-align: left;
+}
 
+#formulario-contacto li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+#formulario-contacto label {
+  margin-bottom: 5px;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+#formulario-contacto input[type="text"],
+#formulario-contacto input[type="email"],
+#formulario-contacto textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#formulario-contacto input::placeholder,
+#formulario-contacto textarea::placeholder {
+  color: #cdcdcd;
+}
+#formulario-contacto input:focus,
+#formulario-contacto textarea:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+}
+
+#formulario-contacto textarea {
+  max-width: 100%;
+  resize: vertical;
+}
+#formulario-contacto .btn-principal{
+    font-size: 1em;
+}
 /* Footer */
-footer{
-    text-align: center;
-    background-color: var(--secondary-color);
-    color: #fff;
-    margin: auto;
-    padding: 20px;
+footer {
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: #fff;
+  margin: auto;
+  padding: 20px;
 }
-footer a{
-    color: #fff;
+footer a {
+  color: #fff;
 }
-footer p{
-    width: 80vw;
-    margin: auto;
+footer p {
+  width: 80vw;
+  margin: auto;
 }
 /* Pantallas pequeñas */
 @media (max-width: 767px) {
@@ -290,5 +315,8 @@ footer p{
   #habilidades li:active {
     color: white;
     background-color: var(--secondary-color);
+  }
+  #mapa {
+    width: 100%;
   }
 }
