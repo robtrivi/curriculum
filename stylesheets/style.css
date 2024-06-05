@@ -6,16 +6,20 @@
   padding: 0;
   margin: 0;
 }
+
 h1,
-h2 {
-  font-family: "Playfair Display", serif;
+h2,
+h3 {
   font-weight: 900;
   letter-spacing: 1px;
   color: var(--secondary-color);
 }
+h1,h2{
+    font-family: "Playfair Display", serif;
+}
 h2 {
   font-size: 2.4rem;
-  padding-bottom: 15px;
+  padding-bottom: 10vh;
 }
 ul {
   list-style-type: none;
@@ -169,39 +173,102 @@ header nav ul a {
 
 /* Experiencia */
 #experiencia ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-#experiencia  li {
-    /* border-bottom: 5px solid var(--secondary-color);
-    border-right: 5px solid var(--secondary-color); */
-    border-radius: 5px;
-    width: 100%;
-  position: relative; /* This is new */
-  box-shadow: 5px 5px 5px rgba(100, 87, 166, 0.7), /* Bottom right shadow */
-              -5px -5px 5px rgba(255, 255, 255, 0.7); /* Top left highlight */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-  
-  .texto-tarjeta {
-    padding: 20px;
-  }
-  
+
+#experiencia li {
+  border-radius: 5px;
+  width: 100%;
+  position: relative;
+  box-shadow: 5px 5px 5px rgba(100, 87, 166, 0.7),
+    -5px -5px 5px rgba(255, 255, 255, 0.7);
+}
+
+.texto-tarjeta {
+  padding: 20px;
+}
+
 #experiencia h3,
 #experiencia p {
-    margin: 0;
-  }
-  
+  margin: 0;
+}
+
 #experiencia iframe,
 #experiencia img {
-    width: 100%;
-    max-height: 200px;
-    border: none;
+  width: 100%;
+  max-height: 200px;
+  border: none;
+}
+
+/* Formulario */
+#contacto{
+    text-align: center;
+}
+#contacto h2{
+    padding-bottom: 10px;
+}
+#contacto .wrapper-2-1{
+    padding-top: 10px;
+    text-align: left;
+}
+#formulario-contacto {
+    padding-top: 20px;
+    text-align: left;
   }
+  
+  #formulario-contacto li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  #formulario-contacto label {
+    margin-bottom: 5px;
+  }
+  
+  #formulario-contacto input[type="text"],
+  #formulario-contacto input[type="email"],
+  #formulario-contacto textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  #formulario-contacto textarea{
+    max-width: 100%;
+    resize: vertical;
+  }
+  #mapa {
+    width: 400px; /* Ancho del mapa */
+  }
+  
+  /* Estilos adicionales para hacer el mapa más pequeño en dispositivos móviles */
+  @media (max-width: 600px) {
+    #mapa {
+      width: 100%;
+    }
+  }
+  
+
+/* Footer */
+footer{
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: #fff;
+    margin: auto;
+    padding: 20px;
+}
+footer a{
+    color: #fff;
+}
+footer p{
+    width: 80vw;
+    margin: auto;
+}
 /* Pantallas pequeñas */
 @media (max-width: 767px) {
   #informacion-basica {
